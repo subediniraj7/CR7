@@ -1,0 +1,37 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+#getting inputs
+starting_salary= float(input("Enter the starting salary of the teacher: "))
+rate = float(input("Enter the percentage increment of the teacher per year: "))
+year = int(input("Enter the number of years serviced by the teacher: "))
+
+
+#convert the rate to decimal
+rate = rate/100
+
+
+#initial salary increment of the teacher
+total_increment = 0.0
+
+#display the header for the table
+print("%4s%19s" % \
+     ("Year", "Salary", )) 
+
+
+#Calculation qnd display of the salary
+
+for year in range(1, year+1):
+    increment= starting_salary*rate
+    end_salary = starting_salary + increment
+    print("%4d%19.3f" % \
+          (year, starting_salary,))
+    starting_salary = end_salary
+    total_increment += increment
+    
+    
+   
+int(input("Press enter to exit: "))    
