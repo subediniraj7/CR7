@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
 
-This is a temporary script file.
-"""
 #getting inputs
 starting_salary= float(input("Enter the starting salary of the teacher: "))
 rate = float(input("Enter the percentage increment of the teacher per year: "))
